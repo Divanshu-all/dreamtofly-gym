@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dream To Fly Gym | Sundernagar</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="logo.png" alt="Dream To Fly Gym" class="logo-img">
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#" onclick="closeMenu()">Home</a></li>
+    <li><a href="#services" onclick="closeMenu()">Service</a></li>
+    <li><a href="#about" onclick="closeMenu()">About</a></li>
+    <li><a href="#plans" onclick="closeMenu()">Pricing</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#plans" class="btn-nav">Join Now</a>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-overlay" id="mobileOverlay" onclick="closeMenu()"></div>
+
+<script>
+function toggleMenu() {
+  const nav = document.getElementById('navLinks');
+  const ham = document.getElementById('hamburger');
+  const overlay = document.getElementById('mobileOverlay');
+  nav.classList.toggle('open');
+  ham.classList.toggle('active');
+  overlay.classList.toggle('show');
+}
+function closeMenu() {
+  document.getElementById('navLinks').classList.remove('open');
+  document.getElementById('hamburger').classList.remove('active');
+  document.getElementById('mobileOverlay').classList.remove('show');
+}
+</script>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-bg-image"></div>
+  <div class="hero-content">
+ <p class="hero-eyebrow">Transform Your Body</p>
+<h1>FITNESS<br>JOURNEY,<br><span class="accent">STARTS HERE</span></h1>
+<p class="hero-sub">
+  Achieve weight loss, build muscle, and live a healthier lifestyle with expert guidance and personalized training programs.
+</p>
+<a href="#plans" class="btn-hero">LET'S START</a>
+  </div>
+  <div class="hero-socials">
+    <a href="#" class="social-dot">𝕏</a>
+    <a href="#" class="social-dot">in</a>
+    <a href="#" class="social-dot">▶</a>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about-section" id="about">
+  <div class="left-column">
+    <!-- Stats Card -->
+    <div class="stats-card">
+      <div class="stat-item">
+        <h2>5+</h2>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <h2>15+</h2>
+        <p>Clients Trained</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <h2>4M+</h2>
+        <p>Instagram Views</p>
+      </div>
+    </div>
+    <!-- About Card -->
+    <div class="about-card">
+      <div class="corner tl"></div>
+      <div class="corner tr"></div>
+      <div class="corner bl"></div>
+      <div class="corner br"></div>
+      <div class="grid-overlay"></div>
+      <div class="orb"></div>
+      <div class="about-card-inner">
+        <span class="about-tag">✦ WHO I AM</span>
+        <h2>MEET<br>VARUN</h2>
+        <div class="title-bar"></div>
+        <h3>Managing Director, Dream To Fly Gym</h3>
+        <p>
+          Varun Dhiman is the founder and Managing Director of Dream To Fly Gym,
+          Sundernagar. With a vision to build a world-class fitness community in
+          Himachal Pradesh, he has grown the gym into a trusted destination for
+          strength training, weight loss, and personal transformation over the
+          past 3+ years.
+        </p>
+        <div class="card-badges">
+          <span>🏢 Founder & MD</span>
+          <span>🏋️ Strength & Fitness</span>
+          <span>🌟 Community Builder</span>
+        </div>
+        <a href="https://www.instagram.com/varundhimaan?igsh=MTV4aXhzc3o5aWtyaQ==" class="about-btn">Contact Me ↗</a>
+      </div>
+    </div>
+  </div>
+  <!-- Right Side Image -->
+  <div class="trainer-placeholder">
+    <img src="Varun.jpeg" alt="Varun Dhiman – Fitness Coach"
+      onerror="this.style.display='none';this.parentElement.classList.add('img-fallback')">
+    <div class="fallback-content">
+      <div class="fallback-initials">VD</div>
+      <p>Varun Dhiman</p>
+      <span>Managing Director</span>
+    </div>
+  </div>
+</section>
+
+<!-- BOOST SECTION -->
+<section class="section boost-section">
+  <div class="section-inner">
+    <h2 class="section-title">BOOST YOUR ROUTINE<br>WITH EXPERT TRAINING</h2>
+    <p class="section-sub">Boost Your Fitness With Professional Workouts. Enjoy Personalized<br>Coaching Tailored To You.</p>
+    <div class="feature-cards">
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#b6ff00"/><path d="M8 16h3m10 0h3M11 16v-3a2 2 0 014 0v6a2 2 0 004 0v-6a2 2 0 014 0v3" stroke="#000" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>STRENGTH<br>TRAINING</h3>
+        <p>Build strength and muscle with modern equipment and structured programs.</p>
+        <a href="#" class="btn-sm">Start Plan</a>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#b6ff00"/><path d="M16 8c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 10c-5.3 0-8 2.7-8 4v2h16v-2c0-1.3-2.7-4-8-4z" fill="#000"/></svg>
+        </div>
+        <h3>PERSONAL<br>TRAINING</h3>
+        <p>Expert one-on-one coaching tailored to your goals. Meet our certified trainer.</p>
+        <a href="https://ankit-portfolio-18g3.onrender.com/" target="_blank" class="btn-sm">View Trainer ↗</a>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#b6ff00"/><path d="M10 22l3-7 3 4 2-3 4 6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="10" r="2.5" fill="#000"/><path d="M8 12l4 2-2 3" stroke="#000" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>ZUMBA<br>CLASSES</h3>
+        <p>High-energy dance fitness sessions that burn calories while keeping it fun.</p>
+        <a href="#plans" class="btn-sm">Join Class</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSFORM SECTION -->
+<section class="section transform-section" id="services">
+  <div class="section-inner">
+    <h2 class="section-title">ACHIEVE YOUR FITNESS GOALS<br>IN A SMARTER WAY</h2>
+    <p class="section-sub">Reach Your Fitness Goals Effortlessly With An Expert Personalized Plan</p>
+
+    <!-- Feature Row 1 -->
+    <div class="feature-row">
+      <div class="feature-text">
+        <span class="feat-quote">"</span>
+        <h3>ADVANCED WORKOUT<br>PROGRAMS</h3>
+        <p>Personalised training plans that adapt to your body and real-time feedback. Designed for beginners and seasoned athletes alike — every session brings you closer to your peak.</p>
+        <a href="#" class="btn-outline">See Details</a>
+      </div>
+      <div class="feature-img">
+        <div class="img-placeholder trainer-img">
+          <div class="img-label">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#b6ff0022"/><path d="M24 16c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 14c-8 0-12 4-12 6v2h24v-2c0-2-4-6-12-6z" fill="#b6ff00"/></svg>
+            <span>Trainer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature Row 2 -->
+    <div class="feature-row feature-row-reverse">
+      <div class="feature-img">
+        <div class="img-placeholder nutrition-img"></div>
+      </div>
+      <div class="feature-text">
+        <span class="feat-quote">"</span>
+        <h3>DIET & WORKOUT<br>GUIDE</h3>
+        <p>Offers custom meal plans and workouts based on your goals and body type. Get precise nutritional guidance from certified coaches to fuel performance and recovery.</p>
+        <a href="#" class="btn-outline">See Plan</a>
+      </div>
+    </div>
+
+    <!-- Feature Row 3 -->
+    <div class="feature-row">
+      <div class="feature-text">
+        <span class="feat-quote">"</span>
+        <h3>CARDIO &<br>ZUMBA</h3>
+        <p>Power up with structured cardio sessions and high-energy Zumba classes. Whether you prefer the treadmill or the dance floor — we've got your fitness covered.</p>
+        <a href="#plans" class="btn-outline">Join Class</a>
+      </div>
+      <div class="feature-img">
+        <div class="img-placeholder cardio-zumba-img"></div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:20px;">
+      <a href="#plans" class="btn-hero">START NOW</a>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section pricing-section" id="plans">
+  <div class="section-inner">
+    <h2 class="section-title">FEE STRUCTURE</h2>
+    <p class="section-sub">Transparent pricing with no hidden charges. Pick what works for you.</p>
+
+    <div class="package-banner">
+      <div class="package-badge">🔥 BEST VALUE</div>
+      <div class="package-info">
+        <h3>COMBO PACKAGE OFFER</h3>
+        <p>Cardio + Gym + Zumba — Everything in one plan</p>
+      </div>
+      <div class="package-price-wrap">
+        <span class="package-price">₹1200</span>
+        <span class="package-per">/month</span>
+      </div>
+      <a href="tel:8894492007" class="pkg-btn">GRAB OFFER</a>
+    </div>
+
+    <div class="pricing-cards">
+      <div class="pricing-card">
+        <p class="plan-label">GYM MEMBERSHIP</p>
+        <div class="plan-price"><span class="price-big">₹1000</span><span class="price-per">/month</span></div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> Full Gym Access</li>
+          <li><span class="check">✓</span> Cardio Area</li>
+          <li><span class="check">✓</span> Locker Access</li>
+          <li><span class="check">✓</span> All Equipment</li>
+        </ul>
+        <div class="alt-prices">
+          <div class="alt-price-row"><span>3 Months</span><strong>₹2,700</strong></div>
+          <div class="alt-price-row"><span>6 Months</span><strong>₹5,000</strong></div>
+        </div>
+        <a href="tel:8894492007" class="btn-plan">JOIN NOW</a>
+      </div>
+
+      <div class="pricing-card featured-plan">
+        <div class="feat-ribbon">BEST DEAL</div>
+        <p class="plan-label">COMBO PACKAGE</p>
+        <div class="plan-price"><span class="price-big">₹1200</span><span class="price-per">/month</span></div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> Full Gym Access</li>
+          <li><span class="check">✓</span> Cardio Sessions</li>
+          <li><span class="check">✓</span> Zumba Classes</li>
+          <li><span class="check">✓</span> All Batch Timings</li>
+          <li><span class="check">✓</span> Locker Access</li>
+        </ul>
+        <a href="tel:8894492007" class="btn-plan-dark">JOIN NOW</a>
+      </div>
+
+      <div class="pricing-card">
+        <p class="plan-label">PERSONAL TRAINING</p>
+        <div class="plan-price"><span class="price-big">₹3000</span><span class="price-per">/month</span></div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> One-On-One Coaching</li>
+          <li><span class="check">✓</span> Custom Workout Plan</li>
+          <li><span class="check">✓</span> Diet Guidance</li>
+          <li><span class="check">✓</span> Progress Tracking</li>
+          <li><span class="check">✓</span> Priority Support</li>
+        </ul>
+        <a href="https://ankit-portfolio-18g3.onrender.com/" target="_blank" class="btn-plan">MEET TRAINER</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINERS & BATCHES -->
+<section class="section trainers-section" id="trainers">
+  <div class="section-inner">
+    <h2 class="section-title">OUR TRAINERS &amp;<br>BATCH TIMINGS</h2>
+    <p class="section-sub">Expert coaches. Structured batches. Results guaranteed.</p>
+    <div class="trainers-grid">
+      <div class="info-card">
+        <div class="info-card-icon">🏋️</div>
+        <h3>OUR TRAINERS</h3>
+        <ul class="info-list">
+          <li><span class="info-label">Cardio &amp; Weight Loss</span><span class="info-value">Mr. Ankit</span></li>
+          <li><span class="info-label">Zumba &amp; Dance Fitness</span><span class="info-value">MD Varun Dhiman</span></li>
+          <li><span class="info-label">CMD</span><span class="info-value">Varun Dhiman</span></li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">🏃</div>
+        <h3>MR. ANKIT'S BATCHES</h3>
+        <p class="info-card-sub">Cardio &amp; Weight Loss</p>
+        <div class="info-card-icon" style="margin-top:20px;">🌅</div>
+        <h3 style="margin-top:8px;">MORNING</h3>
+        <ul class="info-list">
+          <li><span class="info-label">Batch 1</span><span class="info-value">6:00 AM – 7:00 AM</span></li>
+          <li><span class="info-label">Batch 2</span><span class="info-value">7:00 AM – 8:00 AM</span></li>
+        </ul>
+        <div class="info-card-icon" style="margin-top:20px;">🌆</div>
+        <h3 style="margin-top:8px;">EVENING</h3>
+        <ul class="info-list">
+          <li><span class="info-label">Batch 1</span><span class="info-value">6:00 PM – 7:00 PM</span></li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">💃</div>
+        <h3>ZUMBA SCHEDULE</h3>
+        <ul class="info-list">
+          <li><span class="info-label">Frequency</span><span class="info-value">Once or Twice a Week</span></li>
+        </ul>
+        <div class="info-card-icon" style="margin-top:24px;">📞</div>
+        <h3 style="margin-top:8px;">CONTACT US</h3>
+        <ul class="info-list">
+          <li><span class="info-label">Primary</span><a href="tel:8894492007" class="info-value info-link">88944 92007</a></li>
+          <li><span class="info-label">Alternate</span><a href="tel:8219328155" class="info-value info-link">82193 28155</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials-section">
+  <div class="section-inner">
+    <h2 class="section-title">REAL MEMBERS. REAL RESULTS.</h2>
+    <p class="section-sub">Join Thousands Who've Achieved Their Goals With Dream To Fly Gym</p>
+    <div class="testimonial-cards">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <div class="testi-avatar">
+          <div class="avatar-circle">R</div>
+        </div>
+        <p>"Expert insights made it easy to stay on track. I've never felt more motivated and energised at the gym."</p>
+        <strong>ROHIT</strong>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <div class="testi-avatar">
+          <div class="avatar-circle">A</div>
+        </div>
+        <p>"Personalized plans that adapt to me — Dream To Fly is worth every penny. Lost 12kg in 4 months!"</p>
+        <strong>ANJALI</strong>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <div class="testi-avatar">
+          <div class="avatar-circle">V</div>
+        </div>
+        <p>"The expert reminders and motivational tips keep me on track, even on tough days. Best gym in Sundernagar."</p>
+        <strong>VIKAS</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <img src="logo.png" alt="Dream To Fly Gym" class="footer-logo-img">
+      </div>
+      <p>Your go-to for Personalised Workouts,<br>Meal Plans, and Expert Training in Sundernagar.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#plans">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Visit Us</h4>
+      <ul class="footer-contact-list">
+        <li><span class="fc-icon">📍</span>Near Sheesh Mehal Hotel, BBMB Lake, Sundernagar, District Mandi, Himachal Pradesh</li>
+        <li><span class="fc-icon">📞</span><a href="tel:8894492007" style="color:inherit;text-decoration:none;">88944 92007</a></li>
+        <li><span class="fc-icon">📞</span><a href="tel:8219328155" style="color:inherit;text-decoration:none;">82193 28155</a></li>
+        <li><span class="fc-icon">⏰</span>Morning: 6:00 AM – 8:00 AM<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Evening: 6:00 PM – 7:00 PM</li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us On</h4>
+      <div class="social-icons">
+        <a href="#" class="soc-icon fb">f</a>
+        <a href="#" class="soc-icon li">in</a>
+        <a href="https://www.instagram.com/varundhimaan?igsh=MTV4aXhzc3o5aWtyaQ==" target="_blank" class="soc-icon ig">◎</a>
+        <a href="#" class="soc-icon tw">𝕏</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+  <p>
+    © 2026 Dream To Fly Gym. All rights reserved.
+    <span class="footer-divider">|</span>
+    Developed by
+    <a
+      href="https://portfolio-tffl.onrender.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="developer-link"
+    >
+      Divanshu
+    </a>
+  </p>
+</div>
+</footer>
+
+</body>
+</html>
